@@ -54,6 +54,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
   @keyframes beat {
     from {
       transform: scale(1);
@@ -121,16 +122,10 @@ export default {
       fill-opacity:0;
     }
     75% {
-      fill-opacity:0.22;
+      fill-opacity:0.2;
     }
     76% {
       fill-opacity:0;
-    }
-    98% {
-      fill-opacity:0;
-    }
-    99% {
-      fill-opacity:0.4;
     }
     100% {
       fill-opacity:0;
@@ -139,12 +134,22 @@ export default {
 
   .beating-logo {
     height:33%;
-    height:33vh;
-    width:33vh;
+    height:43vh;
+    width:43vh;
     padding: 20px;
     padding: 7vh;
     position:relative;
   }
+
+@media(max-width: 480px) {
+  .beating-logo {
+    height:75vw;
+    width:75vw;
+    padding: 10px;
+    padding: 7vw;
+    position:relative;
+  }
+}
 
   .beating-logo__logo {
     height:100%;

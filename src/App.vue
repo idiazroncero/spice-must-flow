@@ -33,6 +33,13 @@ export default {
   font-weight: 600;
   font-style: normal;
 }
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 html {
   font-family: 'Geomanist', Helvetica, Arial, sans-serif;
 }
@@ -46,5 +53,6 @@ html {
   align-items:center;
   justify-content:center;
   background-color: #A01714;
+  background:radial-gradient(circle farthest-corner at center center, #A01714 0%, #600F0C 100%);
 }
 </style>
