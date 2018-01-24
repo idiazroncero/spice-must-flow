@@ -30,12 +30,20 @@
 <script>
 import anime from 'animejs';
 
+
 export default {
-  name: 'HelloWorld',
+  name: 'Spice Must Flow',
   // data() {
   //   return {
   //     msg: 'Welcome to Your Vue.js App',
   //   };
+  // },
+  // metaInfo: {
+  //   title: 'Spice Must Flow',
+  //   meta: [
+  //     { charset: 'utf-8' },
+  //     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  //   ],
   // },
   mounted() {
     anime({
@@ -48,6 +56,7 @@ export default {
       loop: true,
     });
   },
+
 };
 
 </script>
