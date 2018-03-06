@@ -1,8 +1,7 @@
 <template>
-  <div id="wrapper">
-    <div class="beating-logo" id="svgLogo">
-      <svg class="beating-logo__logo logo" viewBox="0 0 2040 3720">
-        <g  fill="#fff"
+    <div class="logo">
+      <svg id="svgLogo" viewBox="0 0 2040 3720">
+        <g  fill="#600F0C"
             stroke-linejoin="round"
             stroke="#fff"
             stroke-width="16"
@@ -23,10 +22,7 @@
           <path stroke-dasharray="10000" style="stroke-dashoffset: 10000px;" class="logo__line__3" d="M1542.7 3268.3c-6.8 0.7-12 1.6-17.1 1.6 -175 0.1-350 0-524.9 0.3 -13.7 0-19.4-4.2-18.8-18.4 0.9-20.3 0.4-40.7 0.2-61 -0.1-9.9 3.6-14.8 14-14.8 171.6 0.1 343.3 0.1 514.9 0 9.7 0 14.3 4.1 16.1 13.7C1531.7 3215.2 1537.1 3240.5 1542.7 3268.3z" />
         </g>
       </svg>
-      <div class="beating-logo__bg"></div>
-      <div class="beating-logo__beat"></div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -65,139 +61,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-#wrapper {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background-color: #A01714;
-  background:radial-gradient(circle farthest-corner at center center, #A01714 0%, #600F0C 100%);
-}
-  @keyframes beat {
-    from {
-      transform: scale(1);
-      opacity:1;
-    }
-    to {
-      transform: scale(1.25);
-      opacity:0;
-    }
-  }
 
-  @keyframes fill-paths {
-    0% {
-      fill-opacity:0;
-    }
-    3% {
-      fill-opacity:0;
-    }
-    4% {
-      fill-opacity:0.1;
-    }
-    5% {
-      fill-opacity:0;
-    }
-    /*85% {
-      fill-opacity:0;
-    }
-    89% {
-      fill-opacity:0.8;
-    }
-    90% {
-      fill-opacity:0;
-    }
-    92% {
-      fill-opacity:1;
-    }
-    100% {
-      fill-opacity:1;
-    }*/
-    35% {
-      fill-opacity:0;
-    }
-    45% {
-      fill-opacity:1;
-    }
-    46% {
-      fill-opacity:0;
-    }
-    47% {
-      fill-opacity:1;
-    }
-    48% {
-      fill-opacity:0;
-    }
-    49% {
-      fill-opacity:1;
-    }
-    54% {
-      fill-opacity:0.85;
-    }
-    58% {
-      fill-opacity:0;
-    }
-    74% {
-      fill-opacity:0;
-    }
-    75% {
-      fill-opacity:0.2;
-    }
-    76% {
-      fill-opacity:0;
-    }
-    100% {
-      fill-opacity:0;
-    }
-  }
-
-  .beating-logo {
-    height:33%;
-    height:43vh;
-    width:43vh;
-    padding: 20px;
-    padding: 7vh;
-    position:relative;
-  }
-
-@media(max-width: 480px) {
-  .beating-logo {
-    height:75vw;
-    width:75vw;
-    padding: 10px;
-    padding: 7vw;
-    position:relative;
-  }
-}
-
-  .beating-logo__logo {
-    height:100%;
-    width:auto;
-    margin: 0 auto 0 27%;
-    display:block;
-    position:relative;
-    z-index:3;
-    animation: fill-paths 14s linear 0s infinite forwards;
-  }
-
-  .beating-logo__bg,
-  .beating-logo__beat {
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background-color:#000;
-    border-radius: 50%;
-    z-index:2;
-  }
-
-  .beating-logo__beat {
-    background-color:rgba(255,255,255, 0.2);
-    animation: beat 2s linear infinite;
-    z-index:1;
-  }
 </style>

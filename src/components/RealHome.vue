@@ -1,145 +1,138 @@
 <template>
-  <h1>{{ name }} {{title}}</h1>
+  <div class="grid">
+    <header class="grid__item grid__header">
+      <div class="logo__wrapper">
+        <Logo/>
+      </div>
+      <!-- <h1>{{ name }} {{title}}</h1> -->
+    </header>
+    <section class="grid__item grid__redes">
+      <h1>Redes</h1>
+    </section>
+    <section class="grid__item grid__info">
+      <h1>Info</h1>
+    </section>
+    <section class="grid__item grid__fotos">
+      <h1>Fotos</h1>
+    </section>
+    <section class="grid__item grid__bolos">
+      <h1>Bolos</h1>
+    </section>
+    <section class="grid__item grid__radio">
+      <h1>Radio</h1>
+    </section>
+  </div>
 </template>
 
 <script>
 
+import Logo from './common/Logo';
 
 export default {
-  name: 'Spice Must Flow',
   data() {
     return {
       title: 'Home',
     };
+  },
+  components: {
+    Logo,
   },
 };
 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style lang="scss">
 
-  @keyframes beat {
-    from {
-      transform: scale(1);
-      opacity:1;
-    }
-    to {
-      transform: scale(1.25);
-      opacity:0;
-    }
-  }
+@import "../scss/settings.scss";
 
-  @keyframes fill-paths {
-    0% {
-      fill-opacity:0;
-    }
-    3% {
-      fill-opacity:0;
-    }
-    4% {
-      fill-opacity:0.1;
-    }
-    5% {
-      fill-opacity:0;
-    }
-    /*85% {
-      fill-opacity:0;
-    }
-    89% {
-      fill-opacity:0.8;
-    }
-    90% {
-      fill-opacity:0;
-    }
-    92% {
-      fill-opacity:1;
-    }
-    100% {
-      fill-opacity:1;
-    }*/
-    35% {
-      fill-opacity:0;
-    }
-    45% {
-      fill-opacity:1;
-    }
-    46% {
-      fill-opacity:0;
-    }
-    47% {
-      fill-opacity:1;
-    }
-    48% {
-      fill-opacity:0;
-    }
-    49% {
-      fill-opacity:1;
-    }
-    54% {
-      fill-opacity:0.85;
-    }
-    58% {
-      fill-opacity:0;
-    }
-    74% {
-      fill-opacity:0;
-    }
-    75% {
-      fill-opacity:0.2;
-    }
-    76% {
-      fill-opacity:0;
-    }
-    100% {
-      fill-opacity:0;
-    }
-  }
 
-  .beating-logo {
-    height:33%;
-    height:43vh;
-    width:43vh;
-    padding: 20px;
-    padding: 7vh;
-    position:relative;
-  }
+html {
+    background: $negro;
+}
 
-@media(max-width: 480px) {
-  .beating-logo {
-    height:75vw;
-    width:75vw;
-    padding: 10px;
-    padding: 7vw;
-    position:relative;
+.logo__wrapper {
+  height:100%;
+  svg {
+    display:block;
+    height:100%;
+    width:auto;
+    margin:0 auto 0 0;
   }
 }
 
-  .beating-logo__logo {
-    height:100%;
-    width:auto;
-    margin: 0 auto 0 27%;
-    display:block;
-    position:relative;
-    z-index:3;
-    animation: fill-paths 14s linear 0s infinite forwards;
-  }
+.logo {
+  height:100%;
+}
 
-  .beating-logo__bg,
-  .beating-logo__beat {
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background-color:#000;
-    border-radius: 50%;
-    z-index:2;
-  }
+.grid {
+  display:grid;
+  //position:fixed;
+  //width:100vw;
+  height:100vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2vw;
+  background: $negro;
+  //background:radial-gradient(circle farthest-corner at center center, $negro 0%, #ccc 100%);
+  padding:4vw;
+  transform: rotate(2deg);
+}
 
-  .beating-logo__beat {
-    background-color:rgba(255,255,255, 0.2);
-    animation: beat 2s linear infinite;
-    z-index:1;
+.grid__item {
+  background: $rojo;
+  padding: 2rem;
+  h1 {
+    text-transform: uppercase;
+    color: $blanco;
+    font-size:3rem;
+    letter-spacing: 0.75rem;
+    margin:0;
   }
+  &:hover {
+    transition:transform 0.25s ease-out;
+    transform: rotate(-2deg);
+  }
+}
+
+.grid__header {
+  background:transparent;
+  grid-column: span 2;
+  grid-row: span 3;
+  transform: rotate(-2deg);
+}
+
+.grid__redes {
+  grid-column: 3 / 7;
+  grid-row: 1 / 2;
+  background:transparent;
+  h1 {
+    font-size:0.5rem;
+  }
+}
+
+.grid__info {
+  // display:none;
+  grid-column: 3 / 7;
+  grid-row: 2 / 4;
+}
+
+.grid__fotos {
+  //display:none;
+  grid-column: 2 / 4;
+  grid-row: 4 / 7;
+}
+
+.grid__radio {
+  //display:none;
+  grid-column: 7 / 9;
+  grid-row: 1 / 5;
+}
+
+.grid__bolos {
+  //display:none;
+  grid-column: 4 / 7;
+  grid-row: 4 / 6;
+}
+
 </style>
