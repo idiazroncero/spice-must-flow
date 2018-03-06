@@ -7,18 +7,18 @@
       <!-- <h1>{{ name }} {{title}}</h1> -->
     </header>
     <section class="grid__item grid__redes">
-      <h1>Redes</h1>
+      <h1>Redes Sociales y tal y cual</h1>
     </section>
-    <section class="grid__item grid__info">
+    <section class="grid__item grid__info grid__rotate">
       <h1>Info</h1>
     </section>
-    <section class="grid__item grid__fotos">
+    <section class="grid__item grid__fotos grid__rotate">
       <h1>Fotos</h1>
     </section>
-    <section class="grid__item grid__bolos">
+    <section class="grid__item grid__bolos grid__rotate">
       <h1>Bolos</h1>
     </section>
-    <section class="grid__item grid__radio">
+    <section class="grid__item grid__radio grid__rotate">
       <h1>Radio</h1>
     </section>
   </div>
@@ -65,6 +65,15 @@ html {
   height:100%;
 }
 
+#app {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
 .grid {
   display:grid;
   //position:fixed;
@@ -74,9 +83,9 @@ html {
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 2vw;
   background: $negro;
+  transform: rotate(2deg);
   //background:radial-gradient(circle farthest-corner at center center, $negro 0%, #ccc 100%);
   padding:4vw;
-  transform: rotate(2deg);
 }
 
 .grid__item {
@@ -86,9 +95,14 @@ html {
     text-transform: uppercase;
     color: $blanco;
     font-size:3rem;
-    letter-spacing: 0.75rem;
+    letter-spacing: 0.5rem;
     margin:0;
   }
+}
+
+.grid__rotate {
+  // transform: rotate(2deg);
+  // transform-origin: center center;
   &:hover {
     transition:transform 0.25s ease-out;
     transform: rotate(-2deg);
@@ -106,8 +120,13 @@ html {
   grid-column: 3 / 7;
   grid-row: 1 / 2;
   background:transparent;
+  //transform: rotate(-2deg);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:0;
   h1 {
-    font-size:0.5rem;
+    font-size:0.75rem;
   }
 }
 
