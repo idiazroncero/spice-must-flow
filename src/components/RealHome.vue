@@ -10,7 +10,8 @@
       <h1>Redes Sociales y tal y cual</h1>
     </section>
     <section class="grid__item grid__info grid__rotate">
-      <h1>Info</h1>
+      <router-link to="/info" class="link-layer"></router-link>
+      <Info/>
     </section>
     <section class="grid__item grid__fotos grid__rotate">
       <h1>Fotos</h1>
@@ -19,7 +20,7 @@
       <h1>Bolos</h1>
     </section>
     <section class="grid__item grid__radio grid__rotate">
-      <h1>Radio</h1>
+      <Radio />
     </section>
   </div>
 </template>
@@ -27,6 +28,8 @@
 <script>
 
 import Logo from './common/Logo';
+import Info from './pages/Info';
+import Radio from './pages/Radio';
 
 export default {
   data() {
@@ -36,6 +39,8 @@ export default {
   },
   components: {
     Logo,
+    Info,
+    Radio,
   },
 };
 
@@ -45,11 +50,6 @@ export default {
 <style lang="scss">
 
 @import "../scss/settings.scss";
-
-
-html {
-    background: $negro;
-}
 
 .logo__wrapper {
   height:100%;
@@ -91,12 +91,14 @@ html {
 .grid__item {
   background: $rojo;
   padding: 2rem;
+  position:relative; // for link-layer
   h1 {
     text-transform: uppercase;
     color: $blanco;
     font-size:3rem;
+    line-height: 1;
+    margin-bottom: $gutter;
     letter-spacing: 0.5rem;
-    margin:0;
   }
 }
 
