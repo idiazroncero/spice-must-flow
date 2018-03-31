@@ -151,7 +151,6 @@ export default {
   display:flex;
   border-bottom: 2px solid $negro;
   button {
-    appearance:none;
     border:none;
     background:$rojo-oscuro;
     border-radius:0;
