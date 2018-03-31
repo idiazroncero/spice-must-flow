@@ -1,18 +1,20 @@
 <template>
   <section class="radio grid__item">
-    <h1 class="escondido">Radio</h1>
-    <div id="radio"></div>
-    <div class="radio__controls">
-      <button @click="prev" class="radio__prev">&lt;</button>
-      <button @click="play" class="radio__play">Play</button>
-      <button @click="pause" class="radio__pause">Pause</button>
-      <button @click="next" class="radio__next">&gt;</button>
+    <h1>Radio</h1>
+    <div class="radio__inner">
+      <div id="radio"></div>
+      <div class="radio__controls">
+        <button @click="prev" class="radio__prev">&lt;</button>
+        <button @click="play" class="radio__play">Play</button>
+        <button @click="pause" class="radio__pause">Pause</button>
+        <button @click="next" class="radio__next">&gt;</button>
+      </div>
+      <ul class="radio__playlist">
+          <li @click="playItem(index)" v-for="(item, index) in playlist" :key="item.title" v-bind:class="{ 'mp3--active' : item.isActive }">
+              {{ item.title }}
+          </li>
+      </ul>
     </div>
-    <ul class="radio__playlist">
-        <li @click="playItem(index)" v-for="(item, index) in playlist" :key="item.title" v-bind:class="{ 'mp3--active' : item.isActive }">
-            {{ item.title }}
-        </li>
-    </ul>
   </section>
 </template>
 
@@ -141,10 +143,20 @@ export default {
 
 .grid__item.radio {
   background: $negro;
-  border: 5px solid $rojo-oscuro;
   padding: 0;
   display:flex;
   flex-direction:column;
+  h1 {
+    font-size:1rem;
+    margin:0.25rem;
+  }
+}
+
+.radio__inner {
+  border: 5px solid $rojo-oscuro;
+  display:flex;
+  flex-direction:column;
+  flex:1;
 }
 
 .radio__controls {
