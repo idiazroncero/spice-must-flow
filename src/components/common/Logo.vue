@@ -30,19 +30,7 @@ import anime from 'animejs';
 
 
 export default {
-  name: 'Spice Must Flow',
-  // data() {
-  //   return {
-  //     msg: 'Welcome to Your Vue.js App',
-  //   };
-  // },
-  // metaInfo: {
-  //   title: 'Spice Must Flow',
-  //   meta: [
-  //     { charset: 'utf-8' },
-  //     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-  //   ],
-  // },
+  name: 'Logo',
   mounted() {
     anime({
       targets: '#svgLogo .logo-paths path',

@@ -3,12 +3,20 @@
     <transition name="page" :duration="1500">
       <router-view/>
     </transition>
+    <div class="radio__wrapper">
+      <Radio />
+    </div>
   </div>
 </template>
 
 <script>
+import Radio from './components/pages/Radio';
+
 export default {
   name: 'App',
+  components: {
+    Radio,
+  },
 };
 </script>
 
@@ -96,6 +104,7 @@ a.link-layer {
 .page-enter-active {
   position:absolute;
   top:0;
+  left:0;
   opacity:0;
   transition: opacity 0.75s ease-out 0.75s;
 }
@@ -125,6 +134,47 @@ a.link-layer {
   .grid__bolos {
     opacity:0;
   }
+}
+
+
+#app {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  display:flex;
+}
+
+.grid {
+  width: 75%;
+  padding:4vw 0 4vw 4vw;
+}
+
+.radio__wrapper {
+  display:grid;
+  height:100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2vw;
+  transform: rotate(2deg);
+  width: calc(25% - 2vw);
+  margin-left: 2vw;
+  padding:4vw 4vw 4vw 0;
+}
+
+.radio {
+  grid-row: 2 / span 4;
+}
+
+.escondido {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 </style>

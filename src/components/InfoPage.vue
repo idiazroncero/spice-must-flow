@@ -12,9 +12,6 @@
     <section class="grid__item grid__info grid__rotate">
       <Info full />
     </section>
-    <section class="grid__item grid__radio grid__rotate">
-      <Radio />
-    </section>
   </div>
 </template>
 
