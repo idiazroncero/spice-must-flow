@@ -16,8 +16,10 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "vue": "^2.5.2",
+    "vue-flickity": "^1.0.9",
     "vue-meta": "^1.4.2",
     "vue-router": "^3.0.1",
+    "vue-slick": "^1.1.12",
     "wavesurfer.js": "^2.0.5"
   },
   "devDependencies": {

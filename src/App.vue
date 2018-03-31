@@ -156,7 +156,7 @@ a.link-layer {
   display:grid;
   height:100%;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-gap: 2vw;
   transform: rotate(2deg);
   width: calc(25% - 2vw);
@@ -165,7 +165,7 @@ a.link-layer {
 }
 
 .radio {
-  grid-row: 2 / span 4;
+  grid-row: 2 / span 8;
 }
 
 .escondido {

@@ -14,7 +14,8 @@
       <Info/>
     </section>
     <section class="grid__item grid__fotos grid__rotate">
-      <h1>Fotos</h1>
+      <router-link to="/fotos" class="link-layer"></router-link>
+      <Fotos />
     </section>
     <section class="grid__item grid__bolos grid__rotate">
       <h1>Bolos</h1>
@@ -26,6 +27,7 @@
 
 import Logo from './common/Logo';
 import Info from './pages/Info';
+import Fotos from './pages/Fotos';
 
 export default {
   data() {
@@ -36,6 +38,7 @@ export default {
   components: {
     Logo,
     Info,
+    Fotos,
   },
 };
 
@@ -82,9 +85,34 @@ export default {
     color: $blanco;
     font-size:3rem;
     line-height: 1;
-    margin-bottom: $gutter;
     letter-spacing: 0.5rem;
   }
+  p {
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom:0;
+    }
+  }
+}
+
+.scroll__parent {
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  align-items: flex-start;
+}
+
+.scroll {
+  flex:1;
+  overflow:scroll;
+}
+
+.back {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  font-size: 0.5rem;
+  margin-bottom: $gutter;
 }
 
 .grid__rotate {
@@ -92,7 +120,7 @@ export default {
   // transform-origin: center center;
   &:hover {
     transition:transform 0.25s ease-out;
-    transform: rotate(-2deg);
+    transform: rotate(-0.5deg);
   }
 }
 
