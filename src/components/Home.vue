@@ -127,10 +127,6 @@ export default {
   }
 }
 
-.grid__bolos h1 {
-  font-size: 1.5rem;
-}
-
 .scroll__parent {
   display:flex;
   flex-direction:column;
@@ -151,14 +147,14 @@ export default {
   margin-bottom: $gutter;
 }
 
-.grid__rotate {
-  // transform: rotate(2deg);
-  // transform-origin: center center;
-  // &:hover {
-  //   transition:transform 0.25s ease-out;
-  //   transform: rotate(-0.5deg);
-  // }
-}
+// .grid__rotate {
+//   // transform: rotate(2deg);
+//   // transform-origin: center center;
+//   // &:hover {
+//   //   transition:transform 0.25s ease-out;
+//   //   transform: rotate(-0.5deg);
+//   // }
+// }
 
 .grid__header {
   background:transparent;
@@ -198,6 +194,12 @@ export default {
   //display:none;
   grid-column: 4 / 7;
   grid-row: 4 / 6;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  h1 {
+    font-size: 0.75rem;
+  }
 }
 
 .redes {
@@ -250,6 +252,7 @@ export default {
 .concert__sitio {
    font-size:2.5rem;
    line-height:1.05;
+   margin-bottom: $gutter;
    text-transform: uppercase;
 }
 
