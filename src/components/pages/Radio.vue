@@ -29,9 +29,9 @@ export default {
       current: 0,
       playlist: [
         {
-          url: '/static/Free.mp3',
-          title: 'Free',
-          isActive: true,
+          url: '/static/Life_is_dangerous.mp3',
+          title: 'Life is Dangerous',
+          isActive: false,
         },
         {
           url: '/static/Black_magic.mp3',
@@ -39,18 +39,18 @@ export default {
           isActive: false,
         },
         {
-          url: '/static/Life_is_dangerous.mp3',
-          title: 'Life is Dangerous',
+          url: '/static/Whispering.mp3',
+          title: 'Whispering',
           isActive: false,
+        },
+        {
+          url: '/static/Free.mp3',
+          title: 'Free',
+          isActive: true,
         },
         {
           url: '/static/Rain_club.mp3',
           title: 'Rain Club',
-          isActive: false,
-        },
-        {
-          url: '/static/Whispering.mp3',
-          title: 'Whispering',
           isActive: false,
         },
       ],
