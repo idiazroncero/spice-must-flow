@@ -31,7 +31,7 @@ export default {
         {
           url: '/static/Life_is_dangerous.mp3',
           title: 'Life is Dangerous',
-          isActive: false,
+          isActive: true,
         },
         {
           url: '/static/Black_magic.mp3',
@@ -46,7 +46,7 @@ export default {
         {
           url: '/static/Free.mp3',
           title: 'Free',
-          isActive: true,
+          isActive: false,
         },
         {
           url: '/static/Rain_club.mp3',
