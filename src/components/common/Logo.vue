@@ -56,6 +56,9 @@ export default {
 
 .logo {
   position:relative;
+  max-width:250px;
+  height:100%;
+  margin: 0 auto;
   small {
     color: #555;
     font-size:0.66rem;
@@ -63,4 +66,12 @@ export default {
   }
 }
 
+.logo__wrapper {
+  height:100%;
+  svg {
+    display:block;
+    height:100%;
+    width:auto;
+  }
+}
 </style>

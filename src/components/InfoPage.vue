@@ -51,10 +51,13 @@ export default {
 <style scoped lang="scss">
 
     @import "../scss/settings.scss";
+    @import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
     .grid {
+      @include breakpoint($large) {
         height:100vh;
         grid-template-rows: repeat(6, 1fr);
+      }
     }
 
     .grid__info {

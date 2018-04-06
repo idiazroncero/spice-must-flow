@@ -48,11 +48,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-    @import "../scss/settings.scss";
+  @import "../scss/settings.scss";
 
-    .grid__fotos {
-        grid-row: 2 / 7;
-        grid-column: 3 / 7;
-    }
+  .grid__fotos {
+    grid-row: 2 / 7;
+    grid-column: 3 / 7;
+  }
 
 </style>

@@ -4,10 +4,10 @@
     <div class="radio__inner">
       <div id="radio"></div>
       <div class="radio__controls">
-        <button @click="prev" class="radio__prev">&lt;</button>
-        <button @click="play" class="radio__play">Play</button>
-        <button @click="pause" class="radio__pause">Pause</button>
-        <button @click="next" class="radio__next">&gt;</button>
+        <button @click="prev" class="radio__button radio__prev">&lt;</button>
+        <button @click="play" v-bind:class="{ 'active' : playing }" class="radio__button radio__play">Play</button>
+        <button @click="pause" class="radio__button radio__pause">Pause</button>
+        <button @click="next" class="radio__button radio__next">&gt;</button>
       </div>
       <ul class="radio__playlist">
           <li @click="playItem(index)" v-for="(item, index) in playlist" :key="item.title" v-bind:class="{ 'mp3--active' : item.isActive }">
@@ -27,6 +27,7 @@ export default {
     return {
       title: 'Radio',
       current: 0,
+      playing: false,
       playlist: [
         {
           url: '/static/Life_is_dangerous.mp3',
@@ -205,6 +206,12 @@ export default {
       font-weight:bold;
       background-color: $rojo-oscuro;
     }
+  }
+}
+
+.radio__button {
+  &.active {
+    background: $rojo;
   }
 }
 

@@ -48,28 +48,36 @@ export default {
 
 <style lang="scss">
 @import "../../scss/settings.scss";
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 @import "flickity/css/flickity.css";
 
 .fotos {
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  height:100%;
+  @include breakpoint($large) {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    height:100%;
+  }
 }
 .flickity-enabled {
-  width:100%;
-  width:calc(100% + 4rem);
-  margin: 0 -2rem -2rem -2rem;
-  flex:1;
+  margin-top:$gutter;
+  @include breakpoint($large) {
+    width:100%;
+    width:calc(100% + 4rem);
+    margin: 0 -2rem -2rem -2rem;
+    flex:1;
+  }
   // background-color: $rojo-oscuro;
 }
 .carousel-cell {
   width:100%;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
+  @include breakpoint($large) {
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+  }
   img {
     max-width:100%;
     max-height:100%;
@@ -77,14 +85,15 @@ export default {
     display:block;
   }
 }
-
-@supports (object-fit:contain) {
-  .carousel-cell {
-    img {
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      object-position:bottom;
+@include breakpoint($large) {
+  @supports (object-fit:contain) {
+    .carousel-cell {
+      img {
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        object-position:bottom;
+      }
     }
   }
 }

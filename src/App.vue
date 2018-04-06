@@ -100,6 +100,7 @@ a.link-layer {
   right:0;
   left:0;
   bottom:0;
+  z-index:9;
 }
 
 .page-enter-active {
@@ -139,30 +140,36 @@ a.link-layer {
 
 
 #app {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  display:flex;
+  @include breakpoint($large) {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    display:flex;
+  }
 }
 
 .grid {
-  width: 75%;
-  padding:4vw 0 4vw 4vw;
+  @include breakpoint($large) {
+    width: 75%;
+    padding:4vw 0 4vw 4vw;
+  }
 }
 
 .radio__wrapper {
-  display:grid;
-  height:100%;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-gap: 2vw;
-  transform: rotate(2deg);
-  width: calc(25% - 2vw);
-  margin-left: 2vw;
-  padding:4vw 4vw 4vw 0;
+  @include breakpoint($large) {
+    display:grid;
+    height:100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 2vw;
+    transform: rotate(2deg);
+    width: calc(25% - 2vw);
+    margin-left: 2vw;
+    padding:4vw 4vw 4vw 0;
+  }
 }
 
 .radio {

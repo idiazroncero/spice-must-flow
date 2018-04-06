@@ -74,38 +74,30 @@ export default {
 <style lang="scss">
 
 @import "../scss/settings.scss";
-
-.logo__wrapper {
-  height:100%;
-  svg {
-    display:block;
-    height:100%;
-    width:auto;
-    margin:0 auto 0 0;
-  }
-}
-
-.logo {
-  height:100%;
-}
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 .grid {
-  display:grid;
-  //position:fixed;
-  // width:100vw;
-  height:100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-gap: 2vw;
-  background: $negro;
-  transform: rotate(2deg);
-  //background:radial-gradient(circle farthest-corner at center center, $negro 0%, #ccc 100%);
+  @include breakpoint($large) {
+    display:grid;
+    //background:radial-gradient(circle farthest-corner at center center, $negro 0%, #ccc 100%);
+    height:100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 2vw;
+    background: $negro;
+    transform: rotate(2deg);
+  }
 }
 
 .grid__item {
   background-color: $rojo;
-  padding: 2rem;
+  padding: 3rem 1.5rem;
   position:relative; // for link-layer
+  margin: 0 $gutter / 2 $gutter $gutter / 2;
+  @include breakpoint($large) {
+    padding: 2rem;
+    margin: 0;
+  }
   &:hover {
     h1:after {
       opacity:1;
@@ -133,7 +125,7 @@ export default {
       transition:all 0.25s ease-out;
       top:0;
       left:0;
-      white-space:nowrap;
+      width:100%;
       display:block;
       z-index:-1;
       opacity:0;
@@ -145,7 +137,7 @@ export default {
       position:absolute;
       top:0;
       left:0;
-      white-space:nowrap;
+      width:100%;
       display:block;
       z-index:-2;
       opacity:0;
@@ -204,11 +196,15 @@ export default {
   grid-column: 3 / 7;
   grid-row: 1 / 2;
   background:transparent;
-  //transform: rotate(-2deg);
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
   padding:0;
+  margin-bottom: $gutter;
+  display:flex;
+  justify-content:center;
+  @include breakpoint($large) {
+    margin-bottom: 0;
+    flex-direction:column;
+    justify-content:flex-end;
+  }
   h1 {
     font-size:0.75rem;
     margin:0;
@@ -244,15 +240,15 @@ export default {
   }
   25% {
     background-position: 60% 40%;
-    background-size: 220%
+    background-size: 205%
   }
   50% {
     background-position: 40% 60%;
-    background-size:190%
+    background-size:185%
   }
   75% {
-    background-position: 30% 70%;
-    background-size:270%;
+    background-position: 55% 45%;
+    background-size:230%;
   }
 }
 
@@ -265,7 +261,7 @@ export default {
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-size: 200%;
-    animation: shakeBg 1s linear infinite alternate;
+    animation: shakeBg 1s linear 5 alternate;
   }
 }
 
@@ -299,7 +295,7 @@ export default {
   }
   li {
     display:inline-block;
-    vertical-align:middle;
+    vertical-align:top;
     list-style-type: none;
     margin-right:$gutter;
   }
