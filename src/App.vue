@@ -23,6 +23,7 @@ export default {
 <style lang="scss">
 
 @import "scss/settings.scss";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 @font-face {
   font-family: 'Geomanist';

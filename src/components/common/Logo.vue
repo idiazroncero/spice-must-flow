@@ -1,5 +1,6 @@
 <template>
     <div class="logo">
+      <router-link to="/" class="link-layer"></router-link>
       <svg id="svgLogo" viewBox="0 0 2040 3720">
         <g  fill="#600F0C"
             stroke-linejoin="round"
@@ -22,6 +23,7 @@
           <path stroke-dasharray="10000" style="stroke-dashoffset: 10000px;" class="logo__line__3" d="M1542.7 3268.3c-6.8 0.7-12 1.6-17.1 1.6 -175 0.1-350 0-524.9 0.3 -13.7 0-19.4-4.2-18.8-18.4 0.9-20.3 0.4-40.7 0.2-61 -0.1-9.9 3.6-14.8 14-14.8 171.6 0.1 343.3 0.1 514.9 0 9.7 0 14.3 4.1 16.1 13.7C1531.7 3215.2 1537.1 3240.5 1542.7 3268.3z" />
         </g>
       </svg>
+      <small>v0.1-beta/peta</small>
     </div>
 </template>
 
@@ -48,6 +50,17 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style lang="scss">
+
+@import "../../scss/settings.scss";
+
+.logo {
+  position:relative;
+  small {
+    color: #555;
+    font-size:0.66rem;
+    font-weight:bold;
+  }
+}
 
 </style>

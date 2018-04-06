@@ -22,16 +22,10 @@
         </li>
       </ul>
     </section>
-    <section class="grid__item grid__info grid__rotate">
-      <router-link to="/info" class="link-layer"></router-link>
-      <Info/>
-    </section>
-    <section class="grid__item grid__fotos grid__rotate">
-      <router-link to="/fotos" class="link-layer"></router-link>
-      <Fotos />
-    </section>
+    <Info/>
+    <Fotos />
     <section class="grid__item grid__bolos grid__rotate">
-      <h1>Próximo concierto</h1>
+      <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
           19 de Abril
@@ -109,15 +103,53 @@ export default {
 }
 
 .grid__item {
-  background: $rojo;
+  background-color: $rojo;
   padding: 2rem;
   position:relative; // for link-layer
+  &:hover {
+    h1:after {
+      opacity:1;
+      top:-5px;
+      left:-5px;
+    }
+    h1:before {
+      opacity:1;
+      top:5px;
+      left:5px;
+    }
+  }
   h1 {
     text-transform: uppercase;
     color: $blanco;
     font-size:2.5rem;
     line-height: 1;
     letter-spacing: 0.5rem;
+    position:relative;
+    z-index:1;
+    &:after {
+      content: attr(data-title);
+      color: $verde;
+      position:absolute;
+      transition:all 0.25s ease-out;
+      top:0;
+      left:0;
+      white-space:nowrap;
+      display:block;
+      z-index:-1;
+      opacity:0;
+    }
+    &:before {
+      content: attr(data-title);
+      transition:all 0.35s ease-out;
+      color: $rosa;
+      position:absolute;
+      top:0;
+      left:0;
+      white-space:nowrap;
+      display:block;
+      z-index:-2;
+      opacity:0;
+    }
   }
   p {
     margin-bottom: 1.5rem;
@@ -126,6 +158,11 @@ export default {
     }
   }
 }
+
+.grid__item--full:hover {
+  background-image:none !important;
+}
+
 
 .scroll__parent {
   display:flex;
@@ -144,7 +181,7 @@ export default {
   font-weight: bold;
   letter-spacing: 0.05rem;
   font-size: 0.5rem;
-  margin-bottom: $gutter;
+  margin: $gutter / 2 0;
 }
 
 // .grid__rotate {
@@ -157,7 +194,7 @@ export default {
 // }
 
 .grid__header {
-  background:transparent;
+  background-color:transparent;
   grid-column: span 2;
   grid-row: span 3;
   transform: rotate(-2deg);
@@ -178,16 +215,58 @@ export default {
   }
 }
 
+@keyframes moveBg {
+  from {
+    background-position: center 0%;
+  }
+  to {
+    background-position: center 33%;
+  }
+}
+
 .grid__info {
   // display:none;
   grid-column: 3 / 7;
   grid-row: 2 / 4;
+  &:hover {
+    background-image: url('/static/smf.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: cover;
+    animation: moveBg 2s linear infinite alternate;
+  }
+}
+
+@keyframes shakeBg {
+  0% {
+    background-position: 50% 50%;
+    background-size: 210%;
+  }
+  25% {
+    background-position: 60% 40%;
+    background-size: 220%
+  }
+  50% {
+    background-position: 40% 60%;
+    background-size:190%
+  }
+  75% {
+    background-position: 30% 70%;
+    background-size:270%;
+  }
 }
 
 .grid__fotos {
   //display:none;
   grid-column: 2 / 4;
   grid-row: 4 / 7;
+  &:hover {
+    background-image: url('/static/foto1.jpg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200%;
+    animation: shakeBg 1s linear infinite alternate;
+  }
 }
 
 .grid__bolos {
@@ -197,8 +276,19 @@ export default {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  &:hover {
+    h1:after {
+      top:-2px;
+      left:-2px;
+    }
+    h1:before {
+      top:2px;
+      left:2px;
+    }
+  }
   h1 {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    letter-spacing:0.1rem;
   }
 }
 

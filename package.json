@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "animejs": "^2.2.0",
+    "breakpoint-sass": "^2.7.1",
     "vue": "^2.5.2",
     "vue-flickity": "^1.0.9",
     "vue-meta": "^1.4.2",

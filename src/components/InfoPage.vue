@@ -22,9 +22,7 @@
         </li>
       </ul>
     </section>
-    <section class="grid__item grid__info grid__rotate">
-      <Info full />
-    </section>
+    <Info full />
   </div>
 </template>
 
