@@ -30,7 +30,6 @@
 
 import Logo from './common/Logo';
 import Info from './pages/Info';
-import Radio from './pages/Radio';
 
 export default {
   data() {
@@ -41,7 +40,6 @@ export default {
   components: {
     Logo,
     Info,
-    Radio,
   },
 };
 
@@ -56,12 +54,12 @@ export default {
     .grid {
       @include breakpoint($large) {
         height:100vh;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(12, 1fr);
       }
     }
 
     .grid__info {
-        grid-row: 2 / 7;
+        grid-row: 3 / 13;
     }
 
 </style>

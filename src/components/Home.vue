@@ -35,16 +35,22 @@
         </div>
         <ul class="concert__links">
           <li>
-            <a class="link-decorated" href="https://www.facebook.com/JAZZVILLE-111519322194148/">Facebook</a>
+            <a class="button" href="https://www.facebook.com/JAZZVILLE-111519322194148/">Facebook</a>
           </li>
           <li>
-            <a class="link-decorated" href="https://goo.gl/maps/BUiBdLkDAam">Localización</a>
+            <a class="button" href="https://goo.gl/maps/BUiBdLkDAam">Localización</a>
           </li>
           <li>
             Entrada: 5€ en taquilla.
           </li>
         </ul>
       </div>
+    </section>
+    <section class="grid__contact">
+      <router-link to="/contacto">
+        <span>Con<br>tacto</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 28" width="30" height="28"><path d="M7.172 28c-1.609 0-3-1.094-3.391-2.656l-1.578-6.266A7.668 7.668 0 0 1 2 17.391c0-.359 0-.703-.078-1.047L.109 8.891A3.483 3.483 0 0 1 0 8c0-1.937 1.469-3.531 3.391-3.734A3.707 3.707 0 0 1 7.063 1.25a3.745 3.745 0 0 1 3.641 2.875l1.297 5.437 1.609-6.687A3.743 3.743 0 0 1 17.251 0c1.859 0 3.391 1.344 3.687 3.156 1.922.219 3.313 1.844 3.313 3.766 0 .297-.047.609-.109.922l-1.922 8C23.47 14.906 24.376 14 26.017 14c2.172 0 3.984 1.766 3.984 3.953 0 1.313-.641 2.531-1.672 3.313l-7.922 5.938a3.995 3.995 0 0 1-2.391.797H7.172zM17.25 2c-.797 0-1.5.562-1.687 1.344L13.001 14h-1.984L8.751 4.594A1.752 1.752 0 0 0 7.064 3.25c-1 0-1.75.797-1.75 1.766a2 2 0 0 0 .047.438l2.063 8.547h-.406L5.471 7.626c-.187-.766-.891-1.375-1.703-1.375a1.76 1.76 0 0 0-1.719 2.156l1.813 7.469c.219.906.063 1.813.297 2.719l1.563 6.266a1.503 1.503 0 0 0 1.453 1.141h10.844c.422 0 .844-.141 1.188-.406l7.922-5.922c.531-.406.875-1.047.875-1.719 0-1.094-.906-1.953-1.984-1.953-.438 0-.859.141-1.203.406l-4.797 3.594v-3.547c0-.125 2.016-8.406 2.172-9.078.031-.141.063-.297.063-.453 0-.969-.734-1.797-1.734-1.797-.812 0-1.516.562-1.703 1.344l-1.813 7.531h-.406l2.344-9.75c.031-.141.047-.297.047-.438 0-.984-.719-1.813-1.734-1.813z"/></svg>
+      </router-link>
     </section>
   </div>
 </template>
@@ -82,7 +88,7 @@ export default {
     //background:radial-gradient(circle farthest-corner at center center, $negro 0%, #ccc 100%);
     height:100%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-gap: 2vw;
     background: $negro;
     transform: rotate(2deg);
@@ -176,25 +182,16 @@ export default {
   margin: $gutter / 2 0;
 }
 
-// .grid__rotate {
-//   // transform: rotate(2deg);
-//   // transform-origin: center center;
-//   // &:hover {
-//   //   transition:transform 0.25s ease-out;
-//   //   transform: rotate(-0.5deg);
-//   // }
-// }
-
 .grid__header {
   background-color:transparent;
   grid-column: span 2;
-  grid-row: span 3;
+  grid-row: span 6;
   transform: rotate(-2deg);
 }
 
 .grid__redes {
   grid-column: 3 / 7;
-  grid-row: 1 / 2;
+  grid-row: 1 / 3;
   background:transparent;
   padding:0;
   margin-bottom: $gutter;
@@ -223,7 +220,7 @@ export default {
 .grid__info {
   // display:none;
   grid-column: 3 / 7;
-  grid-row: 2 / 4;
+  grid-row: 3 / 7;
   &:hover {
     background-image: url('/static/smf.jpg');
     background-repeat: no-repeat;
@@ -255,7 +252,7 @@ export default {
 .grid__fotos {
   //display:none;
   grid-column: 2 / 4;
-  grid-row: 4 / 7;
+  grid-row: 7 / 13;
   &:hover {
     background-image: url('/static/foto1.jpg');
     background-repeat: no-repeat;
@@ -268,7 +265,7 @@ export default {
 .grid__bolos {
   //display:none;
   grid-column: 4 / 7;
-  grid-row: 4 / 6;
+  grid-row: 7 / 11;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
@@ -285,6 +282,49 @@ export default {
   h1 {
     font-size: 1rem;
     letter-spacing:0.1rem;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+.grid__contact {
+  grid-column: 4 / 6;
+  grid-row: 11 / 13;
+  padding:0;
+  svg {
+    fill:$blanco;
+    display:block;
+    height: 2rem;
+  }
+  span {
+    display:block;
+    margin-bottom: $gutter / 4;
+  }
+  a {
+    text-transform: uppercase;
+    font-weight:bold;
+    color: $blanco;
+    font-size: 1rem;
+    line-height:1;
+  }
+  &:hover {
+    svg {
+      transform-origin: 50% 100%;
+      animation: shake 0.75s ease-out infinite;
+    }
   }
 }
 
@@ -338,9 +378,9 @@ export default {
 .concert__sitio {
   font-size:2.5rem;
   line-height:1.05;
-  //margin-bottom: $gutter / 4;
-  border-bottom: $gutter / 6 solid $rojo_oscuro;
-  padding-bottom: $gutter / 2;
+  margin-bottom: $gutter / 4;
+  // border-bottom: $gutter / 6 solid $rojo_oscuro;
+  // padding-bottom: $gutter / 2;
   text-transform: uppercase;
   font-weight:bold;
 }
@@ -350,14 +390,23 @@ export default {
   padding:0;
   list-style-type:none;
   display:flex;
-  text-transform: uppercase;
   li {
     display:inline-block;
-    margin-right:$gutter;
-    padding-left: $gutter / 4;
-    border-left: $gutter / 16 solid $rojo_oscuro;
-    font-size:0.6rem;
-    line-height:1rem;
+    margin-right:$gutter / 4;
+    font-size:0.55rem;
+    letter-spacing: 0.04rem;
+    line-height:2;
+    text-transform: uppercase;
+    font-weight:bold;
+    a.button {
+      display:block;
+      background-color: $rojo-oscuro;
+      padding: 0 $gutter / 4;
+      &:hover,
+      &:focus {
+        background-color: $negro;
+      }
+    }
   }
 }
 

@@ -22,24 +22,39 @@
         </li>
       </ul>
     </section>
-    <Fotos full />
+    <section class="grid__item grid__form">
+      <h1>Contacto</h1>
+      <router-link class="back link-decorated" to="/">← Volver a portada</router-link>
+      <form name="contact" method="POST" netlify class="form">
+        <div class="form__item">
+          <label>Nombre: <input type="text" name="name"></label>
+        </div>
+        <div class="form__item">
+          <label>e-mail: <input type="email" name="email"></label>
+        </div>
+        <div class="form__item">
+          <label>Mensaje: <textarea name="message"></textarea></label>
+        </div>
+        <div class="form__item">
+          <button type="submit" class="form-button">Enviar</button>
+        </div>
+      </form>
+    </section>
   </div>
 </template>
 
 <script>
 
 import Logo from './common/Logo';
-import Fotos from './pages/Fotos';
 
 export default {
   data() {
     return {
-      title: 'Info',
+      title: 'Contacto',
     };
   },
   components: {
     Logo,
-    Fotos,
   },
 };
 
@@ -49,10 +64,62 @@ export default {
 <style scoped lang="scss">
 
   @import "../scss/settings.scss";
+  @import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
-  .grid__fotos {
-    grid-row: 3 / 13;
-    grid-column: 3 / 7;
+  .grid__form {
+      grid-column: 3 / 7;
+      grid-row: 3 / 13;
+  }
+
+  .form {
+    margin-top:$gutter;
+  }
+
+  .form__item {
+    margin-bottom:$gutter;
+    label {
+      display:block;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      display:block;
+      width:100%;
+      font-family: 'Geomanist', Helvetica, Arial, sans-serif;
+      line-height: $base-line-height;
+      font-size:1rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background:none;
+      border:none;
+      border-bottom:1px solid $blanco;
+      color:$blanco;
+      padding: $gutter / 2 0;
+    }
+
+    textarea {
+      min-height:100px;
+    }
+  }
+
+  .form-button {
+    background: $rojo-oscuro;
+    padding: $gutter / 4 $gutter / 2;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+    border:none;
+    color:$blanco;
+    font-family: 'Geomanist', Helvetica, Arial, sans-serif;
+    line-height: $base-line-height;
+    font-size:1rem;
+    cursor:pointer;
+    &:hover,
+    &:focus {
+      background-color: $negro;
+    }
   }
 
 </style>
