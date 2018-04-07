@@ -11,7 +11,8 @@
       </div>
       <ul class="radio__playlist">
           <li @click="playItem(index)" v-for="(item, index) in playlist" :key="item.title" v-bind:class="{ 'mp3--active' : item.isActive }">
-              {{ item.title }}
+            <div class="radio__item__title">{{ item.title }}</div>
+            <div class="radio__item__subtitle">{{ item.subtitle }}</div>
           </li>
       </ul>
     </div>
@@ -31,17 +32,20 @@ export default {
       playlist: [
         {
           url: '/static/Life_is_dangerous.mp3',
-          title: 'Life is Dangerous - Brixton sessions, 1981',
+          title: 'Life is Dangerous',
+          subtitle: 'Brixton sessions, 1981',
           isActive: true,
         },
         {
           url: '/static/Black_magic.mp3',
-          title: 'Black Magic - Brixton sessions, 1981',
+          title: 'Black Magic',
+          subtitle: 'Brixton sessions, 1981',
           isActive: false,
         },
         {
           url: '/static/Whispering.mp3',
-          title: 'Whispering - Brixton sessions, 1983',
+          title: 'Whispering',
+          subtitle: 'Brixton sessions, 1983',
           isActive: false,
         },
         // {
@@ -197,10 +201,12 @@ export default {
   li {
     flex:1;
     display:flex;
-    align-items:center;
+    flex-direction:column;
+    justify-content:center;
     padding: 5px;
     border-bottom:2px solid $rojo-oscuro;
     cursor: pointer;
+    font-size:1.1rem;
     &.mp3--active,
     &:hover {
       font-weight:bold;
@@ -213,6 +219,11 @@ export default {
   &.active {
     background: $rojo;
   }
+}
+
+.radio__item__subtitle {
+  font-size:0.6rem;
+  text-transform: uppercase;
 }
 
 </style>
