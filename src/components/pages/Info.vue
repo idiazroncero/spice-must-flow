@@ -2,7 +2,7 @@
   <section class="grid__item grid__info grid__rotate" v-bind:class="{ 'grid__item--full' : full}">
     <router-link v-if="!full" to="/info" class="link-layer"></router-link>
     <div class="info scroll__parent">
-      <h1 data-title="Quiénes somos">Quiénes Somos</h1>
+      <h1 data-title="La banda">La banda</h1>
       <router-link v-if="full" class="back link-decorated" to="/">← Volver a portada</router-link>
       <div v-if="full" class="scroll">
         <p>Spice Must Flow es una banda originaria de Madrid y formada por Gyanendra Wannax (guitarra y voz), Óscar Rough (batería) y Nacho Díaz (bajo).</p>

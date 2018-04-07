@@ -31,29 +31,29 @@ export default {
       playlist: [
         {
           url: '/static/Life_is_dangerous.mp3',
-          title: 'Life is Dangerous',
+          title: 'Life is Dangerous - Brixton sessions, 1981',
           isActive: true,
         },
         {
           url: '/static/Black_magic.mp3',
-          title: 'Black Magic',
+          title: 'Black Magic - Brixton sessions, 1981',
           isActive: false,
         },
         {
           url: '/static/Whispering.mp3',
-          title: 'Whispering',
+          title: 'Whispering - Brixton sessions, 1983',
           isActive: false,
         },
-        {
-          url: '/static/Free.mp3',
-          title: 'Free',
-          isActive: false,
-        },
-        {
-          url: '/static/Rain_club.mp3',
-          title: 'Rain Club',
-          isActive: false,
-        },
+        // {
+        //   url: '/static/Free.mp3',
+        //   title: 'Free',
+        //   isActive: false,
+        // },
+        // {
+        //   url: '/static/Rain_club.mp3',
+        //   title: 'Rain Club',
+        //   isActive: false,
+        // },
       ],
     };
   },

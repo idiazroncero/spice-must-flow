@@ -28,10 +28,10 @@
       <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
-          19 de Abril
+          19 de Abril · Madrid · 21:30h
         </div>
         <div class="concert__sitio">
-          Sala Jazzville <small>(Madrid)</small>
+          Jazzville
         </div>
         <ul class="concert__links">
           <li>
@@ -283,7 +283,7 @@ export default {
     }
   }
   h1 {
-    font-size: 0.85rem;
+    font-size: 1rem;
     letter-spacing:0.1rem;
   }
 }
@@ -336,10 +336,13 @@ export default {
 }
 
 .concert__sitio {
-   font-size:2.5rem;
-   line-height:1.05;
-   margin-bottom: $gutter;
-   text-transform: uppercase;
+  font-size:2.5rem;
+  line-height:1.05;
+  //margin-bottom: $gutter / 4;
+  border-bottom: $gutter / 6 solid $rojo_oscuro;
+  padding-bottom: $gutter / 2;
+  text-transform: uppercase;
+  font-weight:bold;
 }
 
 .concert__links {
@@ -347,10 +350,14 @@ export default {
   padding:0;
   list-style-type:none;
   display:flex;
+  text-transform: uppercase;
   li {
     display:inline-block;
     margin-right:$gutter;
-    font-size:0.75rem;
+    padding-left: $gutter / 4;
+    border-left: $gutter / 16 solid $rojo_oscuro;
+    font-size:0.6rem;
+    line-height:1rem;
   }
 }
 
