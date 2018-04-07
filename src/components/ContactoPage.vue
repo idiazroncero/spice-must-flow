@@ -26,6 +26,7 @@
       <h1>Contacto</h1>
       <router-link class="back link-decorated" to="/">← Volver a portada</router-link>
       <form name="contact" method="POST" netlify class="form">
+        <input type="hidden" name="form-name" value="contact" />
         <div class="form__item">
           <label>Nombre: <input type="text" name="name"></label>
         </div>
@@ -34,9 +35,6 @@
         </div>
         <div class="form__item">
           <label>Mensaje: <textarea name="message"></textarea></label>
-        </div>
-        <div class="form__item">
-          <button type="submit" class="form-button">Enviar</button>
         </div>
       </form>
     </section>

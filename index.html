@@ -18,19 +18,10 @@
   </head>
   <body>
     <!-- Para los bots de Netlify -->
-    <form hidden name="contact" method="POST" netlify class="form">
-      <div class="form__item">
-        <label>Nombre: <input type="text" name="name"></label>
-      </div>
-      <div class="form__item">
-        <label>e-mail: <input type="email" name="email"></label>
-      </div>
-      <div class="form__item">
-        <label>Mensaje: <textarea name="message"></textarea></label>
-      </div>
-      <div class="form__item">
-        <button type="submit" class="form-button">Enviar</button>
-      </div>
+    <form hidden name="contact" method="POST" netlify netlify-honeypot="surname" class="form">
+      <input type="text" name="name">
+      <input type="email" name="email">
+      <textarea name="message"></textarea>
     </form>
     <div id="vue"></div>
     <!-- built files will be auto injected -->
