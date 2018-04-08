@@ -22,25 +22,32 @@
         </li>
       </ul>
     </section>
-    <Info full />
+    <section class="grid__item grid__info grid__item--full">
+      <div class="info scroll__parent">
+        <h1 data-title="La banda">La banda:<br> <small>Nacho Díaz</small></h1>
+        <router-link class="back link-decorated" to="/info">← Volver</router-link>
+        <div class="scroll">
+          <p>Nacido en Zaragoza y crecido en Soria, es bajista vocacional (que no guitarrista frustrado). Como no podía ser de otro modo, comenzó sus andaduras en la música en las banda locales de punk-rock Mendigando Papelillos y A Deshora. Ya en Madrid, un lento viaje musical le fue llevando desde el rock urbano de La Competencia hasta el swing-rock de Flying Piñatas. En Lisboa se unió al proyecto O Trance do Mimo, una algarada callejera y festiva de música balcánica, swing y rock; así como al grupo de Swing da Má Sorte” De vuelta en Madrid, el peso gravitacional de Spice Must Flow lo atrajo hacia su órbita y lo mantiene encerrado en una eterna elipse hasta nuevo aviso.</p>
+        </div>
+      </div>
+    </section>
     <div class="grid__persons">
-      <div class="grid__person grid__pablo">
+      <div class="grid__person grid__pablo dim">
         <router-link to="/info/pablo" class="link-layer"></router-link>
       </div>
-      <div class="grid__person grid__oscar">
+      <div class="grid__person grid__oscar dim">
         <router-link to="/info/oscar" class="link-layer"></router-link>
       </div>
       <div class="grid__person grid__nacho">
-        <router-link to="/info/nacho" class="link-layer"></router-link>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
 
 import Logo from './common/Logo';
-import Info from './pages/Info';
 
 export default {
   data() {
@@ -50,7 +57,6 @@ export default {
   },
   components: {
     Logo,
-    Info,
   },
 };
 
@@ -58,18 +64,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-
-  @import "../scss/settings.scss";
-  @import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-
-  // .grid {
-  //   @include breakpoint($large) {
-  //     height:100vh;
-  //     grid-template-rows: repeat(12, 1fr);
-  //   }
-  // }
-
-  .grid__info.grid__item--full {
-    grid-row: 3 / 13;
-  }
 </style>

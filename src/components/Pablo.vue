@@ -22,25 +22,32 @@
         </li>
       </ul>
     </section>
-    <Info full />
+    <section class="grid__item grid__info grid__item--full">
+      <div class="info scroll__parent">
+        <h1 data-title="La banda">La banda:<br> <small>Pablo Muñoz (Gyannendra Wanax)</small></h1>
+        <router-link class="back link-decorated" to="/info">← Volver</router-link>
+        <div class="scroll">
+          <p>Nacido en Madrid en 1987, guitarrista y vocalista en Spice Must Flow (Madrid), así como bajista en Black Bone Tango (Granada). Gran amante del ragtime y el blues primigenio sin por ello dejar de lado prácticamente ningún estilo y/o cultura musicales. Actualmente trabaja impartiendo clases de guitarra y lenguaje musical en Madrid y realizando actividades en campamentos de servicios sociales. Algún día quizás haga cine o teatro y algún día también irá para quizás nunca volver a América o Asia.</p>
+        </div>
+      </div>
+    </section>
     <div class="grid__persons">
       <div class="grid__person grid__pablo">
-        <router-link to="/info/pablo" class="link-layer"></router-link>
       </div>
-      <div class="grid__person grid__oscar">
+      <div class="grid__person grid__oscar dim">
         <router-link to="/info/oscar" class="link-layer"></router-link>
       </div>
-      <div class="grid__person grid__nacho">
+      <div class="grid__person grid__nacho dim">
         <router-link to="/info/nacho" class="link-layer"></router-link>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
 
 import Logo from './common/Logo';
-import Info from './pages/Info';
 
 export default {
   data() {
@@ -50,7 +57,6 @@ export default {
   },
   components: {
     Logo,
-    Info,
   },
 };
 
@@ -58,18 +64,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-
-  @import "../scss/settings.scss";
-  @import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-
-  // .grid {
-  //   @include breakpoint($large) {
-  //     height:100vh;
-  //     grid-template-rows: repeat(12, 1fr);
-  //   }
-  // }
-
-  .grid__info.grid__item--full {
-    grid-row: 3 / 13;
-  }
 </style>

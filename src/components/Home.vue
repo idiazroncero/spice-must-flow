@@ -303,7 +303,12 @@ export default {
 .grid__contact {
   grid-column: 4 / 6;
   grid-row: 11 / 13;
-  padding:0;
+  padding: 0 $gutter;
+  margin-bottom: $gutter;
+  @include breakpoint($large) {
+    padding:0;
+    margin-bottom:0;
+  }
   svg {
     fill:$blanco;
     display:block;
@@ -314,6 +319,7 @@ export default {
     margin-bottom: $gutter / 4;
   }
   a {
+    display:block;
     text-transform: uppercase;
     font-weight:bold;
     color: $blanco;
@@ -409,5 +415,45 @@ export default {
     }
   }
 }
+
+.grid__persons {
+  display:flex;
+  height:75px;
+  margin-bottom: $gutter;
+  grid-column: 2 / 3;
+  grid-row: 7 / 13;
+  @include breakpoint($large) {
+    flex-direction:column;
+    justify-content:space-between;
+    height: auto;
+    margin-bottom:0;
+  }
+}
+
+  .grid__person {
+    flex:1;
+    margin: 0 $gutter / 2;
+    @include breakpoint($large) {
+      flex: 0 0 30%;
+      margin:0;
+    }
+    background-image: url('/static/smf.jpg');
+    background-repeat: no-repeat;
+    background-size:300% auto;
+    position:relative;
+  }
+
+  .grid__pablo {
+    background-position: 95% 25%;
+    background-size:350% auto;
+  }
+  .grid__nacho {
+    background-position: 0% 0%;
+    background-size:250% auto;
+  }
+  .grid__oscar {
+    background-position: 45% 25%;
+    background-size:325% auto;
+  }
 
 </style>
