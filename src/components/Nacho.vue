@@ -27,7 +27,7 @@
         <h1 data-title="La banda">La banda:<br> <small>Nacho Díaz</small></h1>
         <router-link class="back link-decorated" to="/info">← Volver</router-link>
         <div class="scroll">
-          <p>Nacido en Zaragoza y crecido en Soria, es bajista vocacional (que no guitarrista frustrado). Como no podía ser de otro modo, comenzó sus andaduras en la música en las banda locales de punk-rock Mendigando Papelillos y A Deshora. Ya en Madrid, un lento viaje musical le fue llevando desde el rock urbano de La Competencia hasta el swing-rock de Flying Piñatas. En Lisboa se unió al proyecto O Trance do Mimo, una algarada callejera y festiva de música balcánica, swing y rock; así como al grupo de Swing da Má Sorte” De vuelta en Madrid, el peso gravitacional de Spice Must Flow lo atrajo hacia su órbita y lo mantiene encerrado en una eterna elipse hasta nuevo aviso.</p>
+          <p>Nacido en Zaragoza y crecido en Soria, es bajista vocacional (que no guitarrista frustrado). Como no podía ser de otro modo, comenzó sus andaduras en la música en las banda locales de punk-rock Mendigando Papelillos y A Deshora. Ya en Madrid, un lento viaje musical le fue llevando desde el rock urbano de La Competencia hasta el swing-rock de Flying Piñatas. En Lisboa se unió al proyecto O Trance do Mimo, una algarada callejera y festiva de música balcánica, swing y rock; así como al grupo Swing da Má Sorte. De vuelta en Madrid, el peso gravitacional de Spice Must Flow lo atrajo hacia su órbita y lo mantiene encerrado en una eterna elipse hasta nuevo aviso.</p>
         </div>
       </div>
     </section>

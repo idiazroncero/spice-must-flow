@@ -17,6 +17,16 @@
         <div class="carousel-cell">
           <img src="/static/foto4.jpg" alt="">
         </div>
+        <div class="carousel-cell"><img src="/static/foto5.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto7.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto8.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto9.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto10.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto11.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto12.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto13.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto14.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="/static/foto15.jpg" alt=""></div>
       </flickity>
     </div>
   </section>

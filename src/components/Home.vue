@@ -28,12 +28,12 @@
       <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
-          19 de Abril · Madrid · 21:30h
+          6 de Junio · Madrid
         </div>
         <div class="concert__sitio">
-          Jazzville
+          Clamores
         </div>
-        <ul class="concert__links">
+        <!-- <ul class="concert__links">
           <li>
             <a class="button" href="https://www.facebook.com/JAZZVILLE-111519322194148/">Facebook</a>
           </li>
@@ -43,7 +43,7 @@
           <li>
             Entrada: 5€ en taquilla.
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
     <section class="grid__contact">
