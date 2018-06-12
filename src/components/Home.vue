@@ -28,22 +28,22 @@
       <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
-          6 de Junio · Madrid
+          12 de Junio · Navarredonda de Gredos
         </div>
         <div class="concert__sitio">
-          Clamores
+          Festival AlmanRock
         </div>
-        <!-- <ul class="concert__links">
+        <ul class="concert__links">
           <li>
-            <a class="button" href="https://www.facebook.com/JAZZVILLE-111519322194148/">Facebook</a>
+            <a class="button" href="https://www.facebook.com/events/450883668715005/">Facebook</a>
           </li>
           <li>
-            <a class="button" href="https://goo.gl/maps/BUiBdLkDAam">Localización</a>
+            <a class="button" href="https://www.ticketea.com/entradas-festival-almanrock/">Entradas</a>
           </li>
           <li>
-            Entrada: 5€ en taquilla.
+            Entrada: 5€
           </li>
-        </ul> -->
+        </ul>
       </div>
     </section>
     <section class="grid__contact">
