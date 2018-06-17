@@ -20,6 +20,9 @@
             <span>Instagram</span>
           </a>
         </li>
+        <li>
+          <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6XL3ROwoiOL5vtdkPxcdqs&size=basic&theme=light&show-count=0" width="200" height="28" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+        </li>
       </ul>
     </section>
     <Info full />

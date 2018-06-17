@@ -1,8 +1,9 @@
 <template>
   <section class="radio grid__item">
-    <h1>Radio</h1>
+    <h1>Vol.1</h1>
     <div class="radio__inner">
-      <div id="radio"></div>
+      <iframe src="https://open.spotify.com/embed?uri=spotify:album:5AyPHFeYVhMTVoG1OVe42i" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <!-- <div id="radio"></div>
       <div class="radio__controls">
         <button @click="prev" class="radio__button radio__prev">&lt;</button>
         <button @click="play" v-bind:class="{ 'active' : playing }" class="radio__button radio__play">Play</button>
@@ -14,7 +15,7 @@
             <div class="radio__item__title">{{ item.title }}</div>
             <div class="radio__item__subtitle">{{ item.subtitle }}</div>
           </li>
-      </ul>
+      </ul> -->
     </div>
   </section>
 </template>

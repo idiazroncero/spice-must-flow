@@ -20,6 +20,9 @@
             <span>Instagram</span>
           </a>
         </li>
+        <li>
+          <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6XL3ROwoiOL5vtdkPxcdqs&size=basic&theme=light&show-count=0" width="200" height="28" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+        </li>
       </ul>
     </section>
     <Info/>
@@ -28,12 +31,12 @@
       <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
-          12 de Junio · Navarredonda de Gredos
+          20 de Julio · Madrid
         </div>
         <div class="concert__sitio">
-          Festival AlmanRock
+          Rock Palace
         </div>
-        <ul class="concert__links">
+        <!-- <ul class="concert__links">
           <li>
             <a class="button" href="https://www.facebook.com/events/450883668715005/">Facebook</a>
           </li>
@@ -43,7 +46,7 @@
           <li>
             Entrada: 5€
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
     <section class="grid__contact">
