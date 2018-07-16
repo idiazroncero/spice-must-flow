@@ -36,17 +36,17 @@
         <div class="concert__sitio">
           Rock Palace
         </div>
-        <!-- <ul class="concert__links">
+        <ul class="concert__links">
           <li>
-            <a class="button" href="https://www.facebook.com/events/450883668715005/">Facebook</a>
+            <a class="button" href="https://www.facebook.com/events/274048430008374/">Facebook</a>
           </li>
           <li>
-            <a class="button" href="https://www.ticketea.com/entradas-festival-almanrock/">Entradas</a>
+            <a class="button" href="https://entradium.com/entradas/spice-must-flow-ombligo-ciudadano-estandar-madrid">Entradas</a>
           </li>
           <li>
-            Entrada: 5€
+            Entrada: 10€
           </li>
-        </ul> -->
+        </ul>
       </div>
     </section>
     <section class="grid__contact">
