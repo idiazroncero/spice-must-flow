@@ -31,20 +31,14 @@
       <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
-          20 de Julio · Madrid
+          15 de Septiembre · Consuegra (Toledo)
         </div>
         <div class="concert__sitio">
-          Rock Palace
+          Festival SoulArt
         </div>
         <ul class="concert__links">
           <li>
-            <a class="button" href="https://www.facebook.com/events/274048430008374/">Facebook</a>
-          </li>
-          <li>
-            <a class="button" href="https://entradium.com/entradas/spice-must-flow-ombligo-ciudadano-estandar-madrid">Entradas</a>
-          </li>
-          <li>
-            Entrada: 10€
+            <a class="button" href="https://www.facebook.com/SoulArt.ts/">Facebook</a>
           </li>
         </ul>
       </div>
