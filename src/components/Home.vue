@@ -28,19 +28,19 @@
     <Info/>
     <Fotos />
     <section class="grid__item grid__bolos grid__rotate">
-      <h1 data-title="Próximo concierto">Próximo concierto</h1>
+      <h1 data-title="Próximo concierto">Nuevo Videoclip</h1>
       <div class="concert">
         <div class="concert__dia">
-          15 de Septiembre · Consuegra (Toledo)
+          #blues #bluesrock #dark
         </div>
         <div class="concert__sitio">
-          Festival SoulArt
+          <a href="https://www.youtube.com/watch?v=zN8WvnUbJ9c">Here comes the caiman</a>
         </div>
-        <ul class="concert__links">
+        <!-- <ul class="concert__links">
           <li>
             <a class="button" href="https://www.facebook.com/SoulArt.ts/">Facebook</a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
     <section class="grid__contact">
