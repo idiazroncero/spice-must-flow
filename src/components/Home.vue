@@ -28,7 +28,7 @@
     <Info/>
     <Fotos />
     <section class="grid__item grid__bolos grid__rotate">
-      <h1 data-title="Próximo concierto">Nuevo Videoclip</h1>
+      <h1 data-title="Nuevo Videoclip">Nuevo Videoclip</h1>
       <div class="concert">
         <div class="concert__dia">
           #blues #bluesrock #dark
