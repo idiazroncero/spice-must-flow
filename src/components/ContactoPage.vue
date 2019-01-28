@@ -28,8 +28,11 @@
     <section class="grid__item grid__form">
       <h1>Contacto</h1>
       <router-link class="back link-decorated" to="/">← Volver a portada</router-link>
-      <form name="contact" method="POST" netlify class="form">
+      <form name="contact" method="POST" netlify data-netlify="true" class="form" netlify-honeypot="address">
         <input type="hidden" name="form-name" value="contact" />
+        <p class="escondido">
+          <label>Your adress:<input name="address" /></label>
+        </p>
         <div class="form__item">
           <label>Nombre: <input type="text" name="name"></label>
         </div>

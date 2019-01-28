@@ -28,13 +28,13 @@
     <Info/>
     <Fotos />
     <section class="grid__item grid__bolos grid__rotate">
-      <h1 data-title="Nuevo Videoclip">Nuevo Videoclip</h1>
+      <h1 data-title="Próximo concierto">Próximo concierto</h1>
       <div class="concert">
         <div class="concert__dia">
-          #blues #bluesrock #dark
+          22 de Febrero
         </div>
         <div class="concert__sitio">
-          <a href="https://www.youtube.com/watch?v=zN8WvnUbJ9c">Here comes the caiman</a>
+          Sala The Cover
         </div>
         <!-- <ul class="concert__links">
           <li>
