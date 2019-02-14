@@ -53,9 +53,6 @@ export default {
 
   @import "../scss/settings.scss";
 
-  .grid__fotos {
-    grid-row: 3 / 13;
-    grid-column: 3 / 7;
-  }
+
 
 </style>

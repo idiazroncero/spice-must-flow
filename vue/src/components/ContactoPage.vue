@@ -74,60 +74,6 @@ export default {
   @import "../scss/settings.scss";
   @import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
-  .grid__form {
-      grid-column: 3 / 7;
-      grid-row: 3 / 13;
-  }
 
-  .form {
-    margin-top:$gutter;
-  }
-
-  .form__item {
-    margin-bottom:$gutter;
-    label {
-      display:block;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      display:block;
-      width:100%;
-      font-family: 'Geomanist', Helvetica, Arial, sans-serif;
-      line-height: $base-line-height;
-      font-size:1rem;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      background:none;
-      border:none;
-      border-bottom:1px solid $blanco;
-      color:$blanco;
-      padding: $gutter / 2 0;
-    }
-
-    textarea {
-      min-height:100px;
-    }
-  }
-
-  .form-button {
-    background: $rojo-oscuro;
-    padding: $gutter / 4 $gutter / 2;
-    text-transform: uppercase;
-    font-weight:bold;
-    letter-spacing: 0.1rem;
-    border:none;
-    color:$blanco;
-    font-family: 'Geomanist', Helvetica, Arial, sans-serif;
-    line-height: $base-line-height;
-    font-size:1rem;
-    cursor:pointer;
-    &:hover,
-    &:focus {
-      background-color: $negro;
-    }
-  }
 
 </style>

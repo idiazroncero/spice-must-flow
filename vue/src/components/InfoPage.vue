@@ -72,7 +72,5 @@ export default {
   //   }
   // }
 
-  .grid__info.grid__item--full {
-    grid-row: 3 / 13;
-  }
+
 </style>

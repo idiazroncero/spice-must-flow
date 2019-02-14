@@ -68,10 +68,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 
-.dim {
-  opacity:0.25;
-  &:hover {
-    opacity:1;
-  }
-}
+
 </style>
