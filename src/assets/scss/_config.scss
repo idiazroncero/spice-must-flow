@@ -50,7 +50,7 @@ $colors: (
 		"lighter": #28CEAA
 	),
 
-	red: (
+	pink: (
 		"darker":  #653131,
 		"dark":    #B73333,
 		"base":    #DA1C5C,
@@ -59,7 +59,7 @@ $colors: (
 	),
 
 	gray: (
-		"black" : #1B1B1B,
+		"black" : #000,
 		"darker":  #333333,
 		"dark":    #666666,
 		"base":    #888888,
@@ -130,23 +130,19 @@ $times: "Times New Roman", Times, Georgia, serif;
 $georgia: Georgia, serif;
 
 // Custom fonts
-$krub: 'Krub', $helvetica;
-$merriweather: 'Merriweather', $georgia;
-
-$fira-sans: 'Fira Sans', $helvetica;
-$lato: 'Lato', $helvetica;
+$geomanist: 'Geomanist', Helvetica, Arial, sans-serif;
 
 
 // Global variables. It is good practice (performance & design) to only use one or two typefaces.
-$font-main: $lato;
-$font-secondary: $fira-sans;
+$font-main: $geomanist;
+$font-secondary: $geomanist;
 
 // Custom values for bold and light allow for more precise mapping
-$bold: 700;
-$font-main-bold: 700;
-$font-secondary-bold: 800;
+$bold: bold;
+$font-main-bold: bold;
+$font-secondary-bold: bold;
 $light: light;
-$normal: 300;
+$normal: normal;
 
 // List of all elements which use $font-secondary.
 $font-secondary-items:
@@ -156,7 +152,7 @@ $font-secondary-items:
 
 // Heading overrides
 // Select a font weight and an alternate line height for your headings
-$heading-font-weight: normal;
+$heading-font-weight: bold;
 $heading-vertical-rhythm:1; // We might want a slower VR for headings. Set to false if not.
 
 
@@ -333,7 +329,7 @@ $menu-background-color: get-color(base, primary);
 // We asume a centered, responsive and max-width limited viewport.
 // ------
 
-$max-width: 960px;
+$max-width: 1200px;
 $layout-align: center; // left, right
 
 

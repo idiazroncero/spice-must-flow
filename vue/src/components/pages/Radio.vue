@@ -1,23 +1,5 @@
 <template>
-  <section class="radio grid__item">
-    <h1>Vol.1</h1>
-    <div class="radio__inner">
-      <iframe src="https://open.spotify.com/embed?uri=spotify:album:5AyPHFeYVhMTVoG1OVe42i" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <!-- <div id="radio"></div>
-      <div class="radio__controls">
-        <button @click="prev" class="radio__button radio__prev">&lt;</button>
-        <button @click="play" v-bind:class="{ 'active' : playing }" class="radio__button radio__play">Play</button>
-        <button @click="pause" class="radio__button radio__pause">Pause</button>
-        <button @click="next" class="radio__button radio__next">&gt;</button>
-      </div>
-      <ul class="radio__playlist">
-          <li @click="playItem(index)" v-for="(item, index) in playlist" :key="item.title" v-bind:class="{ 'mp3--active' : item.isActive }">
-            <div class="radio__item__title">{{ item.title }}</div>
-            <div class="radio__item__subtitle">{{ item.subtitle }}</div>
-          </li>
-      </ul> -->
-    </div>
-  </section>
+
 </template>
 
 <script>
@@ -147,84 +129,6 @@ export default {
 
 @import "../../scss/settings.scss";
 
-.grid__item.radio {
-  background: $negro;
-  padding: 0;
-  display:flex;
-  flex-direction:column;
-  h1 {
-    font-size:1rem;
-    margin:0.25rem;
-  }
-}
 
-.radio__inner {
-  border: 5px solid $rojo-oscuro;
-  display:flex;
-  flex-direction:column;
-  flex:1;
-}
-
-.radio__controls {
-  display:flex;
-  border-bottom: 2px solid $negro;
-  button {
-    border:none;
-    background:$rojo-oscuro;
-    border-radius:0;
-    color:$blanco;
-    font-size:0.66rem;
-    line-height:2.66;
-    font-weight:bold;
-    text-transform:uppercase;
-    flex:1;
-    &:hover,
-    &:focus {
-      background: $rojo;
-    }
-  }
-  .radio__play {
-    border-left: 2px solid $negro;
-    border-right: 2px solid $negro;
-  }
-  .radio__pause {
-    border-right: 2px solid $negro;
-  }
-}
-
-.radio__playlist {
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  display:flex;
-  flex-direction:column;
-  flex:1;
-  li {
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding: 5px;
-    border-bottom:2px solid $rojo-oscuro;
-    cursor: pointer;
-    font-size:1.1rem;
-    &.mp3--active,
-    &:hover {
-      font-weight:bold;
-      background-color: $rojo-oscuro;
-    }
-  }
-}
-
-.radio__button {
-  &.active {
-    background: $rojo;
-  }
-}
-
-.radio__item__subtitle {
-  font-size:0.6rem;
-  text-transform: uppercase;
-}
 
 </style>
