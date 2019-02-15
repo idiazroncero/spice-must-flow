@@ -1,0 +1,36 @@
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  position: relative;
+
+  &.link-decorated {
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: - 0.25em;
+      right: 0;
+      width: 100%;
+      max-width: 50%;
+      height: 0.25em;
+      background-color: $white;
+      opacity: 0.5;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+a:focus,
+a:hover {
+  &.link-decorated {
+    &:before {
+      max-width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+a.link-layer {
+  @include layer();
+  z-index: 9;
+}

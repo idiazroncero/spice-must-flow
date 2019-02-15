@@ -4,4 +4,23 @@
 @import "config";
 @import "../../../node_modules/huesos/huesos";
 
+@import "base/animaciones";
+@import "base/links";
+
+@import "layout/layout";
+
 @import "vue/importedcss";
+
+@import "components/concierto";
+@import "components/form";
+@import "components/labanda";
+@import "components/logo";
+@import "components/radio";
+@import "components/redes";
+
+
+
+
+.escondido {
+    @extend %hidden;
+}

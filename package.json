@@ -7,6 +7,7 @@
     "watch": "yarn eleventy --watch",
     "serve": "yarn eleventy --serve",
     "debug": "DEBUG=* yarn eleventy",
+    "js:build": " yarn babel src/assets/js/es6 --out-dir src/assets/js/; yarn webpack src/assets/js/script.js --output src/assets/js/script-bundle.js",
     "sass": "yarn node-sass src/assets/scss/style.scss src/assets/css/style.css --source-map=true",
     "sass:prod": "yarn node-sass src/assets/scss/style.scss src/assets/css/style.css --output-style=compressed",
     "sass:watch": "yarn node-sass src/assets/scss/style.scss src/assets/css/style.css -w",
@@ -25,6 +26,10 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.5.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
     "del": "^3.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-responsive": "^2.13.0",
@@ -36,6 +41,8 @@
     "markdown-it-anchor": "^4.0.0"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "animejs": "^3.0.1",
     "clean-css": "^4.1.11",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
@@ -46,6 +53,8 @@
     "postcss": "^7.0.2",
     "postcss-cssnext": "^3.1.0",
     "sass": "^1.13.4",
-    "uglify-js": "^3.4.5"
+    "uglify-js": "^3.4.5",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   }
 }

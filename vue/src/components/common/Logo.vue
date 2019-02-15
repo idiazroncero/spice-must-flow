@@ -34,15 +34,7 @@ import anime from 'animejs';
 export default {
   name: 'Logo',
   mounted() {
-    anime({
-      targets: '#svgLogo .logo-paths path',
-      strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutSine',
-      duration: 7000,
-      // delay(el, i) { return i * 600; },
-      direction: 'alternate',
-      loop: true,
-    });
+
   },
 
 };

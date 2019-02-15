@@ -1,0 +1,49 @@
+.redes {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+    margin-right: $gutter;
+
+    iframe {
+      width: 100px;
+      height: 28px;
+    }
+  }
+
+  svg {
+    fill: $white;
+    height: 1rem;
+    width: auto;
+    margin-right: 5px;
+  }
+
+  a {
+    display: block;
+
+    &:hover {
+      color: get-color(base, primary);
+
+      svg {
+        fill: get-color(base, primary);
+      }
+    }
+  }
+
+  svg,
+  span {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  span {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

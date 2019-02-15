@@ -1,0 +1,52 @@
+.grid__persons {
+  display: flex;
+  height: 75px;
+  margin-bottom: $gutter;
+  grid-column: 2 / 3;
+  grid-row: 7 / 13;
+
+  @include breakpoint($large) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+
+.grid__person {
+  flex: 1;
+  margin: 0 $gutter / 2;
+
+  @include breakpoint($large) {
+    flex: 0 0 30%;
+    margin: 0;
+  }
+
+  background-image: url('/assets/img/smf.jpg');
+  background-repeat: no-repeat;
+  background-size:300% auto;
+  position:relative;
+}
+
+.grid__pablo {
+  background-position: 95% 25%;
+  background-size: 350% auto;
+}
+
+.grid__nacho {
+  background-position: 0% 0%;
+  background-size: 250% auto;
+}
+
+.grid__oscar {
+  background-position: 45% 25%;
+  background-size: 325% auto;
+}
+
+.dim {
+  opacity: 0.25;
+
+  &:hover {
+    opacity: 1;
+  }
+}

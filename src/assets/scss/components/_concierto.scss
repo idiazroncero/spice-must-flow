@@ -1,0 +1,44 @@
+
+
+.concert__dia {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.concert__sitio {
+  font-size: 2.5rem;
+  line-height: 1.05;
+  margin-bottom: 0;
+  // border-bottom: $gutter / 6 solid get-color(base, primary)_oscuro;
+  // padding-bottom: $gutter / 2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.concert__links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+
+  li {
+    display: inline-block;
+    margin-right: $gutter / 4;
+    font-size: 0.55rem;
+    letter-spacing: 0.04rem;
+    line-height: 2;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    a.button {
+      display: block;
+      background-color: get-color(base, secondary);
+      padding: 0 $gutter / 4;
+
+      &:hover,
+      &:focus {
+        background-color: $black;
+      }
+    }
+  }
+}

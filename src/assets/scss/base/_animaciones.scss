@@ -1,0 +1,50 @@
+@keyframes moveBg {
+  from {
+    background-position: center 0%;
+  }
+
+  to {
+    background-position: center 33%;
+  }
+}
+
+
+@keyframes shakeBg {
+  0% {
+    background-position: 50% 50%;
+    background-size: 210%;
+  }
+
+  25% {
+    background-position: 60% 40%;
+    background-size: 205%
+  }
+
+  50% {
+    background-position: 40% 60%;
+    background-size: 185%
+  }
+
+  75% {
+    background-position: 55% 45%;
+    background-size: 230%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+}

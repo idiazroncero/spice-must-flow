@@ -15,8 +15,8 @@ $colors: (
 	),
 
 	text: (
-		"primary":   #1A1A19,
-		"heading":   #1A1A19,
+		"primary":   #fff,
+		"heading":   #fff,
 		"active": #383837,
 		"mark" : goldenRod,
 	),
@@ -259,10 +259,10 @@ $link-mark-color: get-color(green, lighter);
 $link-smart-background: get-color(gray, "white");
 
 // Link colors
-$link-color: get-color(blue, base);
-$link-visited: get-color(blue, darker);
-$link-hover: get-color(blue,light);
-$link-active: get-color(blue, darker);
+$link-color: $white;
+$link-visited: $white;
+$link-hover: get-color(gray, "lighter");
+$link-active: $white;
 
 
 
