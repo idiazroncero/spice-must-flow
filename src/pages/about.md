@@ -1,27 +1,36 @@
 ---
-title: About us
+title: La Banda
 tags:
   - nav
 navtitle: About
-section: about
+section: info
 date: 2017-01-01
-permalink: /about/index.html
+permalink: /info/index.html
 ---
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<section class="grid__item grid__main">
+  <div class="info scroll__parent">
+    <h1 data-title="La banda">La banda</h1>
+    <a class="back link-decorated" href="/">← Volver a portada</a>
+    <div>
+      <p>Spice Must Flow es una banda originaria de Madrid y formada por Gyanendra Wannax (guitarra y voz), Óscar Rough (batería) y Nacho Díaz (bajo).</p>
+      <p>Originariamente centrados en las sonoridades afroamericanas (funk, soul, blues), el sonido de Spice Must Flow ha ido lentamente incorporando influencias del punk y el garage originales, así como del acid-rock o el grunge. En cualquier caso, y sea cual sea el estilo musical, la banda se distingue siempre por la debida atención prestada al groove, ese duende musical con efecto inmediato en las caderas y cabezas del público. El maridaje de la rítmica de la música afroamericana con la velocidad del punk y del garage resulta en un directo eléctrico y electrizante, enérgico y vital, bailongo y sudoroso.</p>
+      <p>Si se quisiera generalizar hasta caer en la autoparodia se podría decir que Spice Must Flow operan con una parte de la cabeza en los años 60 y 70 y otra bien anclada en el siglo XXI, que anteponen ritmo y sonoridad a exhibiciones de técnica, que prefieren al público que baila al que asiente, que están con el 99%, que no son vanguardia ni sienten la necesidad de serlo, que ya llevan suficiente experiencia a las espaldas como para no tener ganas de dar lecciones a nadie y sí de disfrutar y hacer disfrutar con su música, que la sinceridad es visible sobre el escenario y la música puede ser un vector de cambio, aunque sea de posición sobre el sofá.</p>
+    </div>
+  </div>
+</section>
 
-## Our services
-
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-### Blue-sky thinking
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-#### Management frameworks
-
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-##### Regulatory convergence
-
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<div class="grid__persons">
+  <div class="grid__person grid__pablo dim">
+    <!-- <a href="/info/pablo" class="link-layer"></a> -->
+  </div>
+  <div class="grid__person grid__oscar dim">
+    <!-- <a href="/info/oscar" class="link-layer"></a> -->
+  </div>
+  <div class="grid__person grid__david dim">
+    <!-- <a href="/info/nacho" class="link-layer"></a> -->
+  </div>
+  <div class="grid__person grid__nacho dim">
+    <!-- <a href="/info/nacho" class="link-layer"></a> -->
+  </div>
+</div>

@@ -1,10 +1,10 @@
 @keyframes moveBg {
   from {
-    background-position: center 0%;
+    background-position: center 20%;
   }
 
   to {
-    background-position: center 33%;
+    background-position: center 55%;
   }
 }
 
@@ -16,18 +16,23 @@
   }
 
   25% {
-    background-position: 60% 40%;
+    background-position: 55% 45%;
     background-size: 205%
   }
 
   50% {
-    background-position: 40% 60%;
-    background-size: 185%
+    background-position: 50% 55%;
+    background-size: 200%
   }
 
   75% {
     background-position: 55% 45%;
-    background-size: 230%;
+    background-size: 210%;
+  }
+
+  100% {
+    background-position: 50% 50%;
+    background-size: 210%;
   }
 }
 

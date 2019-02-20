@@ -27,26 +27,7 @@
     </section>
     <section class="grid__item grid__form">
       <h1>Contacto</h1>
-      <router-link class="back link-decorated" to="/">← Volver a portada</router-link>
-      <form name="contact" method="POST" netlify data-netlify="true" class="form" netlify-honeypot="address" data-netlify-recaptcha="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <p class="escondido">
-          <label>Your adress:<input name="address" /></label>
-        </p>
-        <div class="form__item">
-          <label>Nombre: <input type="text" name="name"></label>
-        </div>
-        <div class="form__item">
-          <label>e-mail: <input type="email" name="email"></label>
-        </div>
-        <div class="form__item">
-          <label>Mensaje: <textarea name="message"></textarea></label>
-        </div>
-        <div class="g-recaptcha" data-sitekey="6Lc02I0UAAAAAJdLrqgL8sqKDf-Q7E72UUMjL7kF"></div>
-        <div class="form__item">
-          <button type="submit" class="form-button">Enviar</button>
-        </div>
-      </form>
+
     </section>
   </div>
 </template>

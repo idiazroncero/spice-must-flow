@@ -3,11 +3,11 @@
   height: 75px;
   margin-bottom: $gutter;
   grid-column: 2 / 3;
-  grid-row: 7 / 13;
+  grid-row: 2 / 2;
 
   @include breakpoint($large) {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto;
     margin-bottom: 0;
   }
@@ -18,8 +18,8 @@
   margin: 0 $gutter / 2;
 
   @include breakpoint($large) {
-    flex: 0 0 30%;
-    margin: 0;
+    flex: 0 0 15%;
+    margin: 0 0 $gutter / 2 0;
   }
 
   background-image: url('/assets/img/smf.jpg');
@@ -29,22 +29,27 @@
 }
 
 .grid__pablo {
-  background-position: 95% 25%;
-  background-size: 350% auto;
+  background-position: 55% 55%;
+  background-size: 450% auto;
 }
 
 .grid__nacho {
-  background-position: 0% 0%;
-  background-size: 250% auto;
+  background-position: 25% 15%;
+  background-size: 340% auto;
 }
 
 .grid__oscar {
-  background-position: 45% 25%;
-  background-size: 325% auto;
+  background-position: 85% 40%;
+  background-size: 350% auto;
+}
+
+.grid__david {
+  background-position: 35% 80%;
+  background-size: 380% auto;
 }
 
 .dim {
-  opacity: 0.25;
+  opacity: 0.5;
 
   &:hover {
     opacity: 1;

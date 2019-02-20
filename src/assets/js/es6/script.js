@@ -21,4 +21,18 @@ ready(function() {
     loop: true,
   });
 
+  // Autoloop
+  
+  const itemsToHover = document.querySelectorAll('.toHover');
+  const timeoutLapse = 1500;
+  itemsToHover.forEach( (item, index) => {
+    var interval = (index + 1) * timeoutLapse;
+    setTimeout(function(){
+      item.classList.add('hover');
+      setTimeout(function(){
+        item.classList.remove('hover');
+      }, timeoutLapse );
+    }, interval);
+  });
+
 });

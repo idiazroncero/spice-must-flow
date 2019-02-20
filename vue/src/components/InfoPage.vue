@@ -26,17 +26,7 @@
       </ul>
     </section>
     <Info full />
-    <div class="grid__persons">
-      <div class="grid__person grid__pablo">
-        <router-link to="/info/pablo" class="link-layer"></router-link>
-      </div>
-      <div class="grid__person grid__oscar">
-        <router-link to="/info/oscar" class="link-layer"></router-link>
-      </div>
-      <div class="grid__person grid__nacho">
-        <router-link to="/info/nacho" class="link-layer"></router-link>
-      </div>
-    </div>
+
   </div>
 </template>
 
