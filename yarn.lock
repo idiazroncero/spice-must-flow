@@ -3990,6 +3990,11 @@ github-from-package@0.0.0:
   resolved "https://registry.yarnpkg.com/github-from-package/-/github-from-package-0.0.0.tgz#97fb5d96bfde8973313f20e8288ef9a167fa64ce"
   integrity sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=
 
+glightbox@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/glightbox/-/glightbox-2.0.0.tgz#e1e8d7c8be6546d199dbf160b70f6c729b25665b"
+  integrity sha512-ai6t+SF69v/ls7vPaIGyVPsHoxwo2xUKMPK9C/nIYNSTIjfRjaCHGAhCHXfTEV4O1Mc6s+CMm/E7fJhJ07+oTQ==
+
 glob-base@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/glob-base/-/glob-base-0.3.0.tgz#dbb164f6221b1c0b1ccf82aea328b497df0ea3c4"

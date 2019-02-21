@@ -1,11 +1,14 @@
-.grid__radio {
+.grid__media,
+.grid__video1 {
     background: $black;
     padding: 0;
     display: flex;
     flex-direction: column;
+    margin:0;
 
-    h1 {
-        font-size: 1rem;
+    h2 {
+        font-size: 0.7rem;
+        text-transform: uppercase;
         margin: 0.25rem;
     }
 }
@@ -14,7 +17,8 @@
     border: 5px solid get-color(base, secondary);
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 0 0 250px;
+    margin-bottom: $gutter;
 }
 
 .radio__controls {
@@ -83,4 +87,62 @@
 .radio__item__subtitle {
     font-size: 0.6rem;
     text-transform: uppercase;
+}
+
+.video__wrapper {
+    margin-bottom: $gutter;
+    height:0;
+    padding-bottom: 56.25%;
+    position:relative;
+    &:before {
+        content:"";
+        @include layer();
+        z-index:1;
+        background-color: rgba($black, .44);
+        opacity:1;
+        transition: opacity 0.5s ease-out;
+    }
+    &:hover {
+        &:before {
+            display:none;
+        }
+    }
+    iframe {
+        @include layer();
+    }
+}
+
+.grid__video2,
+.grid__video3 {
+    .video__wrapper {
+        height:100%;
+        padding:0;
+    }
+    overflow:hidden;
+    position:relative;
+    a {
+        display:block;
+        @include layer();
+    }
+    img {
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    }
+    &:hover {
+        .video__play {
+            fill: #fff;
+        }
+    }
+}
+
+.video__play {
+    fill:get-color(base, primary);
+    position:absolute;
+    top:50%;
+    left: 50%;
+    width:40px;
+    height:auto;
+    transform: translate(-50%, -50%);
+    z-index:4;
 }

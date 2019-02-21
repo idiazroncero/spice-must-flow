@@ -1,4 +1,5 @@
 import anime from 'animejs';
+import GLightbox from 'glightbox';
 
 // $document.ready alternative;
 function ready(fn) {
@@ -10,6 +11,12 @@ function ready(fn) {
 }
 
 ready(function() {
+
+  // LIGHTBOX
+  var slider = GLightbox({
+
+  });
+
 
   anime({
     targets: '#svgLogo .logo-paths path',
