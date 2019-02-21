@@ -5,9 +5,14 @@ html {
 
 
 .page {
+  min-height:100vh;
   @include breakpoint($large) {
     display: flex;
   }
+}
+
+.home {
+  align-items:center;
 }
 
 .grid {

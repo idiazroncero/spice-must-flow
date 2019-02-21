@@ -4212,9 +4212,14 @@ html {
   background: #000;
   color: #fff; }
 
-@media (min-width: 900px) {
-  .page {
-    display: flex; } }
+.page {
+  min-height: 100vh; }
+  @media (min-width: 900px) {
+    .page {
+      display: flex; } }
+
+.home {
+  align-items: center; }
 
 @media (min-width: 900px) {
   .grid {
@@ -4410,16 +4415,6 @@ html {
   .grid__contact:hover svg, .grid__contact.hover svg {
     transform-origin: 50% 100%;
     animation: shake 0.75s ease-out infinite; }
-
-.scroll__parent {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: flex-start; }
-
-.scroll {
-  flex: 1;
-  overflow: scroll; }
 
 .glightbox-container {
   width: 100%;
@@ -5439,14 +5434,14 @@ iframe.wait-autoplay {
     .image-grid .image-grid__item:hover:before {
       opacity: 0;
       display: none; }
-    .image-grid .image-grid__item:nth-child(1) {
+    .image-grid .image-grid__item:nth-child(14n + 1) {
       grid-column: span 2;
       grid-row: span 2; }
-    .image-grid .image-grid__item:nth-child(8) {
+    .image-grid .image-grid__item:nth-child(14n + 8) {
       grid-column: span 2; }
-    .image-grid .image-grid__item:nth-child(10) {
+    .image-grid .image-grid__item:nth-child(14n + 10) {
       grid-row: span 2; }
-    .image-grid .image-grid__item:nth-child(14) {
+    .image-grid .image-grid__item:nth-child(14n + 0) {
       grid-column: span 2; }
   .image-grid img {
     object-fit: cover;
