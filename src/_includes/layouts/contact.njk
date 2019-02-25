@@ -7,11 +7,7 @@ section: contacto
     <h1 data-title="{{title}}">{{ title }}</h1>
     <a class="back link-decorated" href="/">← Volver a portada</a>
     {{ layoutContent | safe }}
-      <form name="contact2" method="POST" netlify class="form" netlify-honeypot="address">
-        <input type="hidden" name="form-name" value="contact" />
-        <p class="escondido">
-          <label>Your adress:<input name="address" /></label>
-        </p>
+      <form name="contact2" method="POST" data-netlify="true" class="form">
         <div class="form__item">
           <label>Nombre: <input type="text" name="name"></label>
         </div>
@@ -25,4 +21,25 @@ section: contacto
           <button type="submit" class="form-button">Enviar</button>
         </div>
     </form>
+
+      <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 </section>
